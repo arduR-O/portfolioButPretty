@@ -5,7 +5,7 @@ import Navbar from './components/Navbar';
 
 function App() {
   //we want to keep track of the current section of page so that we can render that onto the navbar and dotgroup, so we declare states for the same, default is home
-  const [currentPage, setCurrentPage] = useState("Home");
+  const [currentPage, setCurrentPage] = useState("home");
   //we have this feature in navbar that needs to know whether the user is on the top of the page, so let's dig into that
   const [isTopOfThePage, setIsTopOfThePage] = useState(true);
   //by default user is on the top but that might change in future, let's handle that change using window api (a side effect)
