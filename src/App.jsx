@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 import Navbar from './components/Navbar';
-// import Dotgroup from "./components/Dotgroup";
+import DotGroup from './components/DotGroup'
 
 function App() {
   //we want to keep track of the current section of page so that we can render that onto the navbar and dotgroup, so we declare states for the same, default is home
-  const [currentPage, setCurrentPage] = useState("home");
+  const [currentPage, setCurrentPage] = useState("Home");
   //we have this feature in navbar that needs to know whether the user is on the top of the page, so let's dig into that
   const [isTopOfThePage, setIsTopOfThePage] = useState(true);
   //by default user is on the top but that might change in future, let's handle that change using window api (a side effect)
@@ -33,8 +33,8 @@ function App() {
     <>
     {/* we are going to use relative positioning to positioning all elements*/}
     {/* we pass currentPage and setCurrentPage to both navbar and dotgroup because depending on that they have certain graphics, also both components involve interactions that update the current page */}
-    <Navbar currentPage={currentPage} setCurrentPage={setCurrentPage} isTopOfThePage/>
-    {/* <DotGroup currentPage={currentPage} setCurrentPage={setCurrentPage}/> */}
+    <Navbar currentPage={currentPage} setCurrentPage={setCurrentPage} isTopOfThePage={isTopOfThePage}/>
+    <DotGroup currentPage={currentPage} setCurrentPage={setCurrentPage}/>
     </>
   )
 }

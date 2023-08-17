@@ -15,11 +15,31 @@ const Navbar = ({currentPage, setCurrentPage, isTopOfThePage}) => {
         <nav className= {`${navBg} fixed z-40 top-0 h-auto w-full flex justify-between mx-5 justify-items-center`}> 
             <h4 className="font-playfair text-5xl">OS</h4>
             <div className="flex gap-10 px-8 justify-items-center">
-                <Link page="Home" currentPage setCurrentPage/>
-                <Link page="About" currentPage setCurrentPage/>
-                <Link page="Skills" currentPage setCurrentPage/>
-                <Link page="Testimonials" currentPage setCurrentPage/>
-                <Link page="Contact Me" currentPage setCurrentPage/>
+            <Link
+              page="Home"
+              currentPage={currentPage}
+              setCurrentPage={setCurrentPage}
+            />
+            <Link
+              page="Skills"
+              currentPage={currentPage}
+              setCurrentPage={setCurrentPage}
+            />
+            <Link
+              page="Projects"
+              currentPage={currentPage}
+              setCurrentPage={setCurrentPage}
+            />
+            <Link
+              page="Testimonials"
+              currentPage={currentPage}
+              setCurrentPage={setCurrentPage}
+            />
+            <Link
+              page="Contact"
+              currentPage={currentPage}
+              setCurrentPage={setCurrentPage}
+            />
             </div>
         </nav>
      );
