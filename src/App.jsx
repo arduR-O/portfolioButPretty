@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import './App.css'
 import Navbar from './components/Navbar';
 import DotGroup from './components/DotGroup'
+import useMediaQuery from './hooks/useMediaQuery';
 
 function App() {
   //we want to keep track of the current section of page so that we can render that onto the navbar and dotgroup, so we declare states for the same, default is home
@@ -28,13 +29,14 @@ function App() {
     return window.removeEventListener("scroll", handleScroll);
     //we are leaving dependency empty since we only need this to run once
   },[])
-
+ 
+  const isDesktop = useMediaQuery("(min-width: 768px)");
   return (
     <>
     {/* we are going to use relative positioning to positioning all elements*/}
     {/* we pass currentPage and setCurrentPage to both navbar and dotgroup because depending on that they have certain graphics, also both components involve interactions that update the current page */}
     <Navbar currentPage={currentPage} setCurrentPage={setCurrentPage} isTopOfThePage={isTopOfThePage}/>
-    <DotGroup currentPage={currentPage} setCurrentPage={setCurrentPage}/>
+    {isDesktop && <DotGroup currentPage={currentPage} setCurrentPage={setCurrentPage}/>}
     </>
   )
 }
