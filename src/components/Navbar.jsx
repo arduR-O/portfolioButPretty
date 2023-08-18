@@ -10,7 +10,7 @@ const Navbar = ({ currentPage, setCurrentPage, isTopOfThePage }) => {
 
   //this one is going to be used to track the toggled state of menu button for mobile screens
   const [isToggled, setIsToggled] = useState(false);
-  console.log("isToggled: "+ isToggled);
+
   //I have this feature for mobile screens in which the navbar collapses when there is a click outside it, so let me write code for that, since there are going to be sideeffect, event listeners and stuff, lemme use a useEffect hook
   //first we need a reference to the nav element, so that we can access it
   const navbarRef = useRef(null); //initially it is null, it will gain value once I mount it onto the required navbar
@@ -39,6 +39,7 @@ const Navbar = ({ currentPage, setCurrentPage, isTopOfThePage }) => {
     >
       <h4 className="font-playfair text-5xl">OS</h4>
       {isDesktop ? (
+        /*Desktop View */
         <div className="flex gap-10 px-8 justify-items-center">
           <Link
             page="Home"
@@ -67,6 +68,7 @@ const Navbar = ({ currentPage, setCurrentPage, isTopOfThePage }) => {
           />
         </div>
       ) : !isToggled ? (
+         /*Mobile View + No Toggle*/
         <button className="fixed top-3 right-3 z-10 w-10 h-10">
           <img
             src="../assets/menu-icon.svg"
@@ -78,6 +80,8 @@ const Navbar = ({ currentPage, setCurrentPage, isTopOfThePage }) => {
           />
         </button>
       ) : (
+         /*Mobile View + With Toggle*/
+
         <nav ref={navbarRef} className="fixed z-10 w-6/12 xs:w-5/12 h-full top-0 right-0 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 flex flex-col px-3 xs:px-10 justify-evenly">
           <Link
             page="Home"
