@@ -14,11 +14,12 @@ const useMediaQuery = (query) => {
 
     //now we don't want this checking to be one off thing, we want to constantly moniter the window size and update the state to see if the query is satisfied or not satisfied after the window resize
     //for this we shall add an event listener to keep listening to changes and verifying if the query is satisfied
-    const listener = () => setMatches(media.matches);
+    const listener = () => setMatch(media.matches);
     window.addEventListener("resize", listener);
 
     //we also need to return a cleanup function
-    return window.removeEventListener("resize", listener);
+    //NOTE DO NOT JUST RETURN WINDOW.REMOVEEVENTLIS... THAT WOULD ACTUALLY CALL THE FUNCTION AND REMOVE EVENT LISTENER, PASS IT INSIDE AN ANON FUNCTION!!
+    return ()=>{window.removeEventListener("resize", listener)};
   }, [query, match]);
 
   //we want to return the bool val match
