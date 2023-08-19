@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 import useMediaQuery from "../hooks/useMediaQuery";
-import Link from "./Link";
+import Link from "../components/Link";
 
 const Navbar = ({ currentPage, setCurrentPage, isTopOfThePage }) => {
   //now this navbar is going to be a banner for desktop users and a togglable button for mobile users, so we need a conditional statement to take care of that, for that we are going to use this cool hook that we have made
@@ -120,3 +120,6 @@ const Navbar = ({ currentPage, setCurrentPage, isTopOfThePage }) => {
 };
 
 export default Navbar;
+
+
+

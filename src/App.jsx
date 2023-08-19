@@ -5,6 +5,7 @@ import DotGroup from './components/DotGroup'
 import useMediaQuery from './hooks/useMediaQuery';
 
 function App() {
+  //Structure: Scenes contians normal components, hooks contains hooks, components contain components that are being reused
   //we want to keep track of the current section of page so that we can render that onto the navbar and dotgroup, so we declare states for the same, default is home
   const [currentPage, setCurrentPage] = useState("Home");
   //we have this feature in navbar that needs to know whether the user is on the top of the page, so let's dig into that
