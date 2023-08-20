@@ -39,7 +39,7 @@ function App() {
     {/* we pass currentPage and setCurrentPage to both navbar and dotgroup because depending on that they have certain graphics, also both components involve interactions that update the current page */}
     <Navbar currentPage={currentPage} setCurrentPage={setCurrentPage} isTopOfThePage={isTopOfThePage}/>
     {isDesktop && <DotGroup currentPage={currentPage} setCurrentPage={setCurrentPage}/>}
-    <LandingPage/>
+    <LandingPage setCurrentPage={setCurrentPage}/>
     </>
   )
 }
