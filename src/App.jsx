@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react'
 import './App.css'
-import Navbar from './components/Navbar';
-import DotGroup from './components/DotGroup'
+import Navbar from './scenes/Navbar';
+import DotGroup from './scenes/DotGroup'
 import useMediaQuery from './hooks/useMediaQuery';
+import LandingPage from './scenes/LandingPage';
 
 function App() {
   //Structure: Scenes contians normal components, hooks contains hooks, components contain components that are being reused
@@ -38,6 +39,7 @@ function App() {
     {/* we pass currentPage and setCurrentPage to both navbar and dotgroup because depending on that they have certain graphics, also both components involve interactions that update the current page */}
     <Navbar currentPage={currentPage} setCurrentPage={setCurrentPage} isTopOfThePage={isTopOfThePage}/>
     {isDesktop && <DotGroup currentPage={currentPage} setCurrentPage={setCurrentPage}/>}
+    <LandingPage/>
     </>
   )
 }
