@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import './App.css'
-import Navbar from './components/Navbar';
-import DotGroup from './components/DotGroup'
+import Navbar from './scenes/Navbar';
+import DotGroup from './scenes/DotGroup'
 import useMediaQuery from './hooks/useMediaQuery';
 
 function App() {
