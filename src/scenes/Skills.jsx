@@ -4,7 +4,7 @@ const Skills = () => {
   return (
     <section id="skills">
       <LineGradient />
-      <div className="flex flex-col items-start justify-start h-screen  p-10">
+      <div className="flex flex-col items-start justify-start min-h-screen  p-10 ">
         <div>
           <h1 className="text-4xl text-white font-playfair mb-2">
             My <span className="text-rose-500">Skills</span>

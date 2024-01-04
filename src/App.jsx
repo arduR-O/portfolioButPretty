@@ -5,6 +5,9 @@ import DotGroup from "./scenes/DotGroup";
 import useMediaQuery from "./hooks/useMediaQuery";
 import LandingPage from "./scenes/LandingPage";
 import Skills from "./scenes/Skills";
+import Projects from "./scenes/Projects";
+import Certifications from "./scenes/Certifications";
+import Contact from "./scenes/Contact";
 
 function App() {
   //Structure: Scenes contians normal components, hooks contains hooks, components contain components that are being reused
@@ -49,6 +52,9 @@ function App() {
       )}
       <LandingPage setCurrentPage={setCurrentPage} />
       <Skills />
+      <Projects/>
+      <Certifications/>
+      <Contact/>
     </>
   );
 }

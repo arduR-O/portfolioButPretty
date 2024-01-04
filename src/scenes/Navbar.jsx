@@ -36,7 +36,7 @@ const Navbar = ({ currentPage, setCurrentPage, isTopOfThePage }) => {
     //the navBg var handles the bg feature, the relative, top stuff is for positioning, z for positioning on z axis
     //I want this to be a bg less bar when at top and then gain background as user scrolls, in mobile devices I want toggle butto to merge with banner on scrolling
     <nav
-      className={`${navBg} fixed z-40 top-0 h-auto w-full flex justify-between px-3`}
+      className={`${navBg} fixed z-40 top-0 h-auto w-full flex justify-between px-3 py-2`}
     >
       <h4 className="font-playfair text-5xl">OS</h4>
       {isDesktop ? (

@@ -1,8 +1,23 @@
+import LineGradient from "../components/LineGradient";
+import ImageCarousel from "../components/ImageCarousel";
+
+
 const Projects = () => {
     return (
-        <div>
-            <h1>Projects</h1>
-        </div>
+        <section id="projects">
+          <div className="flex flex-col items-start justify-start min-h-screen p-3 sm:p-10">
+            <div className="mb-10">
+              <h1 className="text-4xl text-white font-playfair mb-2">
+                <span className="text-amber-500">Pro</span>jects
+              </h1>
+              <LineGradient width="w-24" />
+            </div>
+            <ImageCarousel
+              images={[ "../assets/cookoff.png"]}
+              links={["https://cookoff23.codechefvit.com/"]}
+            />
+          </div>
+        </section>
       );
 }
  
