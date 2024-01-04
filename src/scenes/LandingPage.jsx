@@ -29,33 +29,35 @@ const LandingPage = ({ setCurrentPage }) => {
           </div>
         ) : (
           <div className="px-10">
-          <img
-            src="../assets/profile-image.jpg"
-            alt="profile image"
-            className=" z-10 max-w-[280px] xxs:max-w-[350px] xs:max-w-[400px] ss:max-w-[525px] mb-6 lg:max-w-[600px]  rounded-t-[400px]"
-          />
+            <img
+              src="../assets/profile-image.jpg"
+              alt="profile image"
+              className=" z-10 max-w-[280px] xxs:max-w-[350px] xs:max-w-[400px] ss:max-w-[525px] mb-6 lg:max-w-[600px]  rounded-t-[400px]"
+            />
           </div>
         )}
       </div>
       <div className="z-30 basis-2/5 mt-12 md:mt-56">
         {/* the {""} thing is to add space between omansh and sharma, for screens above xs I want that brush effect, for that I am going to use "content-brush that I defined in tailwind config file" */}
-        <p className="relative text-6xl md:text-5xl lgtext:text-6xl font-playfair z-10 text-center md:text-start">
+        <p className="relative text-5xl ss2:text-6xl md:text-5xl lgtext:text-6xl font-playfair z-10 text-center md:text-start">
           Omansh {""}
           <span
-            className="xs:relative xs:text-deep-blue xs:font-semibold z-20 xs:before:content-brush
-              before:absolute before:-left-10 before:-top-32 before:md:-top-36 before:lg:-top-32  before:z-[-10] "
+            className="xs:relative xs:text-deep-blue xs:font-semibold z-20 xs:before:content-brushButSmall ss2:before:content-brush
+              before:absolute before:-left-8 before:-top-24 before:ss2:-left-10 before:ss2:-top-32 before:md:-top-36 before:lg:-top-32  before:z-[-10]"
           >
             Sharma
           </span>
         </p>
         {/* font-normal font-opensans mt-20 text-xl */}
-        <p className="mt-10 mb-7 text-xl text-center md:text-start">
-          Web developer by day, creative problem solver by nature. With a knack
-          for teamwork and a dash of curiosity, I transform challenges into
-          captivating digital experiences.
+        <p className="mt-10 mb-7 text-xl text-center md:text-start md:px-0 px-12">
+          Web developer by day, I thrive on pushing boundaries as a creative
+          problem solver. With a natural flair for teamwork and insatiable
+          curiosity, I turn challenges into captivating digital
+          experiences—whether coding dynamic web applications or delving into
+          machine learning complexities.
         </p>
         <div className="flex mt-5 justify-center md:justify-start">
-        <AnchorLink
+          <AnchorLink
             className="bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold
               hover:bg-blue hover:text-white transition duration-500 text-xl"
             onClick={() => setSelectedPage("contact")}
