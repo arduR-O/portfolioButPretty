@@ -24,7 +24,7 @@ const LandingPage = ({ setCurrentPage }) => {
                         before:w-full before:max-w-[400px] md:before:max-w-[600px] before:h-[40vw] before:border-2 before:border-blue before:z-[-1]"
           >
             <img
-              src="../assets/profile-image.jpg"
+              src="../assets/profile-image2.JPG"
               alt="profile image"
               className="hover:filter hover:saturate-200 transition duration-500 z-10 max-w-[400px] md:max-w-[40vw] rounded-t-[400px]"
             />
@@ -32,7 +32,7 @@ const LandingPage = ({ setCurrentPage }) => {
         ) : (
           <div className="px-10">
             <img
-              src="../assets/profile-image.jpg"
+              src="../assets/profile-image2.JPG"
               alt="profile image"
               className=" z-10 max-w-[280px] xxs:max-w-[350px] xs:max-w-[400px] ss:max-w-[525px] mb-6 lg:max-w-[600px]  rounded-t-[400px]"
             />
