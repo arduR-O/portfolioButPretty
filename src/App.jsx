@@ -3,6 +3,7 @@ import './App.css'
 import Navbar from './scenes/Navbar';
 import DotGroup from './scenes/DotGroup'
 import useMediaQuery from './hooks/useMediaQuery';
+import LandingPage from './scenes/LandingPage';
 
 function App() {
   //Structure: Scenes contians normal components, hooks contains hooks, components contain components that are being reused
@@ -31,13 +32,14 @@ function App() {
     //we are leaving dependency empty since we only need this to run once
   },[])
  
-  const isDesktop = useMediaQuery("(min-width: 768px)");
+  const isDesktop = useMediaQuery("(min-width: 840px)");
   return (
     <>
     {/* we are going to use relative positioning to positioning all elements*/}
     {/* we pass currentPage and setCurrentPage to both navbar and dotgroup because depending on that they have certain graphics, also both components involve interactions that update the current page */}
     <Navbar currentPage={currentPage} setCurrentPage={setCurrentPage} isTopOfThePage={isTopOfThePage}/>
     {isDesktop && <DotGroup currentPage={currentPage} setCurrentPage={setCurrentPage}/>}
+    <LandingPage setCurrentPage={setCurrentPage}/>
     </>
   )
 }

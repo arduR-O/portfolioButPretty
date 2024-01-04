@@ -4,7 +4,7 @@ import Link from "../components/Link";
 
 const Navbar = ({ currentPage, setCurrentPage, isTopOfThePage }) => {
   //now this navbar is going to be a banner for desktop users and a togglable button for mobile users, so we need a conditional statement to take care of that, for that we are going to use this cool hook that we have made
-  const isDesktop = useMediaQuery("(min-width: 768px)"); //768px covers tablets and larger screens
+  const isDesktop = useMediaQuery("(min-width: 840px)"); //768px covers tablets and larger screens
   //we also want that while the user is on the home section the navbar has no color but when he goes down the navbar gets some bg
   const navBg = isTopOfThePage ? "" : "bg-yellow";
 
@@ -35,12 +35,12 @@ const Navbar = ({ currentPage, setCurrentPage, isTopOfThePage }) => {
     //the navBg var handles the bg feature, the relative, top stuff is for positioning, z for positioning on z axis
     //I want this to be a bg less bar when at top and then gain background as user scrolls, in mobile devices I want toggle butto to merge with banner on scrolling
     <nav
-      className={`${navBg}fixed z-40 top-0 h-auto w-full flex justify-between mx-5 justify-items-center`}
+      className={`${navBg}fixed z-40 top-0 h-auto w-full flex justify-between px-3`}
     >
       <h4 className="font-playfair text-5xl">OS</h4>
       {isDesktop ? (
         /*Desktop View */
-        <div className="flex gap-10 px-8 justify-items-center">
+        <div className="flex gap-5 md:gap-10 md:px-8 justify-items-center">
           <Link
             page="Home"
             currentPage={currentPage}

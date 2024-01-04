@@ -29,18 +29,22 @@ export default {
         },
         content: {
           brush: "url('./assets/brush.png')",
+          brushButSmall: "url('./assets/brushButSmall.png')",
           person1: "url('./assets/person-1.png')",
           person2: "url('./assets/person-2.png')",
           person3: "url('./assets/person-3.png')",
         },
       },
       screens: {
+        xxs: "420px",
         xs: "480px",
-        ss: "620px",
-        sm: "768px",
-        md: "1060px",
-        lg: "1200px",
-        xl: "1700px",
+      ss: "620px",
+      ss2: "670px",
+      sm: "768px",
+      md: "1060px",
+      lg: "1200px",
+      lgtext: "1250px",
+      xl: "1700px"
       }
   },
   plugins: [],
