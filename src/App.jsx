@@ -37,6 +37,25 @@ function App() {
     //we are leaving dependency empty since we only need this to run once
   }, []);
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setCurrentPage(entry.target.id);
+          }
+        });
+      },
+      { threshold: 0.7 } // Adjust this value to change when the callback is triggered
+    );
+
+    const sections = document.querySelectorAll('section');
+    sections.forEach((section) => observer.observe(section));
+
+    return () => {
+      sections.forEach((section) => observer.unobserve(section));
+    };
+  }, []);
   const isDesktop = useMediaQuery("(min-width: 840px)");
   return (
     <>

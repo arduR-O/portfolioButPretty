@@ -21,10 +21,10 @@ const Contact = () => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
   return (
     <section
-      id="contact "
-      className="mt-10 h-[90vh] flex flex-col justify-evenly"
+      id="contact"
+      className="mt-24 h-[90vh] flex flex-col justify-evenly "
     >
-      <LineGradient />
+      <LineGradient/>
       <div className="py-10 px-14">
         {/* HEADINGS */}
         <motion.div

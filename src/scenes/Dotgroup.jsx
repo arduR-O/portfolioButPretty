@@ -10,7 +10,7 @@ const DotGroup = ({ currentPage, setCurrentPage }) => {
       <Dot page={"home"} currentPage={currentPage} setCurrentPage={setCurrentPage}/>
       <Dot page={"skills"} currentPage={currentPage} setCurrentPage={setCurrentPage}/>
       <Dot page={"projects"} currentPage={currentPage} setCurrentPage={setCurrentPage}/>
-      <Dot page={"testimonials"} currentPage={currentPage} setCurrentPage={setCurrentPage}/>
+      <Dot page={"certifications"} currentPage={currentPage} setCurrentPage={setCurrentPage}/>
       <Dot page={"contact"} currentPage={currentPage} setCurrentPage={setCurrentPage}/>
      
     </div>
