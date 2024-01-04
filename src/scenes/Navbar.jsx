@@ -4,9 +4,10 @@ import Link from "../components/Link";
 
 const Navbar = ({ currentPage, setCurrentPage, isTopOfThePage }) => {
   //now this navbar is going to be a banner for desktop users and a togglable button for mobile users, so we need a conditional statement to take care of that, for that we are going to use this cool hook that we have made
+  console.log("ontp",isTopOfThePage);
   const isDesktop = useMediaQuery("(min-width: 840px)"); //768px covers tablets and larger screens
   //we also want that while the user is on the home section the navbar has no color but when he goes down the navbar gets some bg
-  const navBg = isTopOfThePage ? "" : "bg-yellow";
+  const navBg = isTopOfThePage ? "" : "bg-orange-700";
 
   //this one is going to be used to track the toggled state of menu button for mobile screens
   const [isToggled, setIsToggled] = useState(false);
@@ -35,7 +36,7 @@ const Navbar = ({ currentPage, setCurrentPage, isTopOfThePage }) => {
     //the navBg var handles the bg feature, the relative, top stuff is for positioning, z for positioning on z axis
     //I want this to be a bg less bar when at top and then gain background as user scrolls, in mobile devices I want toggle butto to merge with banner on scrolling
     <nav
-      className={`${navBg}fixed z-40 top-0 h-auto w-full flex justify-between px-3`}
+      className={`${navBg} fixed z-40 top-0 h-auto w-full flex justify-between px-3`}
     >
       <h4 className="font-playfair text-5xl">OS</h4>
       {isDesktop ? (
@@ -57,7 +58,7 @@ const Navbar = ({ currentPage, setCurrentPage, isTopOfThePage }) => {
             setCurrentPage={setCurrentPage}
           />
           <Link
-            page="Testimonials"
+            page="Certifications"
             currentPage={currentPage}
             setCurrentPage={setCurrentPage}
           />
@@ -102,7 +103,7 @@ const Navbar = ({ currentPage, setCurrentPage, isTopOfThePage }) => {
             style="font-semibold"
           />
           <Link
-            page="Testimonials"
+            page="Certifications"
             currentPage={currentPage}
             setCurrentPage={setCurrentPage}
             style="font-semibold"
