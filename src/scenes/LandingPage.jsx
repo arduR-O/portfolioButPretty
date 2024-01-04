@@ -18,8 +18,8 @@ const LandingPage = ({ setCurrentPage }) => {
       <div className="h-full basis-3/5 mt-16 md:mt-56 flex justify-center md:order-2 md:mx-0">
         {isAboveLarge ? (
           <div
-            className="relative z-0 ml-20 before:absolute mt-16 md:mt-12 before:-top-20 before:-left-20 before:rounded-t-[400px]
-                        before:w-full before:max-w-[400px] md:before:max-w-[600px] before:h-[40vw] before:border-2 before:border-blue before:z-[-1] mr-14"
+            className="relative z-0 mx-20 before:absolute mt-16 md:mt-12 before:-top-20 before:-left-20 before:rounded-t-[400px]
+                        before:w-full before:max-w-[400px] md:before:max-w-[600px] before:h-[40vw] before:border-2 before:border-blue before:z-[-1]"
           >
             <img
               src="../assets/profile-image.jpg"
@@ -28,11 +28,13 @@ const LandingPage = ({ setCurrentPage }) => {
             />
           </div>
         ) : (
+          <div className="px-10">
           <img
             src="../assets/profile-image.jpg"
             alt="profile image"
-            className=" z-10 max-w-[525px] mb-6 lg:max-w-[600px]  rounded-t-[400px]"
+            className=" z-10 max-w-[280px] xxs:max-w-[350px] xs:max-w-[400px] ss:max-w-[525px] mb-6 lg:max-w-[600px]  rounded-t-[400px]"
           />
+          </div>
         )}
       </div>
       <div className="z-30 basis-2/5 mt-12 md:mt-56">
