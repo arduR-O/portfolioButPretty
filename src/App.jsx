@@ -32,7 +32,7 @@ function App() {
     //we are leaving dependency empty since we only need this to run once
   },[])
  
-  const isDesktop = useMediaQuery("(min-width: 768px)");
+  const isDesktop = useMediaQuery("(min-width: 840px)");
   return (
     <>
     {/* we are going to use relative positioning to positioning all elements*/}

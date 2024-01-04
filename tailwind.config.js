@@ -40,6 +40,7 @@ export default {
       sm: "768px",
       md: "1060px",
       lg: "1200px",
+      lgtext: "1250px",
       xl: "1700px"
       }
   },
