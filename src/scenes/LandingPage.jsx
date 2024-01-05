@@ -13,7 +13,7 @@ const LandingPage = ({ setCurrentPage }) => {
     //when screen is md I want section to be a flex box, else I want the normal stacking behaviour
     <section
       id="home"
-      className="md:flex md:justify-between md:items-center gap-16 md:h-full py-10 ml-10 md:mb-32"
+      className="md:flex md:justify-between md:items-center gap-16 md:h-full py-10 mx-5 md:mb-32"
     >
       {/* this div is going to contain the image, also if screens are large I render the border thingy */}
       {/* we need two divs, one for the general flex box purpose and the other to just wrap around image and provide that border thingy design, which won't be there when screen is not large, also this div has mid:order-2 class what this does is that by defualt the image is top element but in large screens it goes to the right side */}
