@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import Navbar from "./scenes/Navbar";
-// import DotGroup from "./scenes/DotGroup";
+import DotGroup from "./scenes/DotGroup";
 import useMediaQuery from "./hooks/useMediaQuery";
 import LandingPage from "./scenes/LandingPage";
 import Skills from "./scenes/Skills";
