@@ -13,7 +13,7 @@ const Skills = () => {
         </div>
         <div>
           <div className="flex flex-col justify-between mt-10">
-            <p className="text-2xl font-opensans">Languages and Tools</p>
+            <p className="text-2xl font-poppins font-semibold">Languages and Tools</p>
             <div className="flex flex-wrap items-center justify-start">
               <img className="h-20 m-5" src="../assets/html.svg" alt="html" />
               <img className="h-20 m-5" src="../assets/css.svg" alt="css" />
@@ -33,9 +33,10 @@ const Skills = () => {
             </div>
           </div>
           <div className="flex flex-col justify-between mt-10">
-            <p className="text-2xl font-opensans">Frameworks</p>
+            <p className="text-2xl font-poppins font-semibold">Frameworks</p>
             <div className="flex flex-wrap items-center justify-start">
               <img className="h-20 m-5" src="../assets/react.svg" alt="react" />
+              <img className="h-20 m-5" src="../assets/tailwind.svg" alt="tailwind css" />
               <img
                 className="h-20 m-5"
                 src="../assets/framer-motion.svg"
@@ -55,9 +56,10 @@ const Skills = () => {
             </div>
           </div>
           <div className="flex flex-col justify-between mt-10">
-            <p className="text-2xl font-opensans">Others</p>
+            <p className="text-2xl font-poppins font-semibold">Others</p>
             <div className="flex flex-wrap items-center justify-start">
               <img className="h-20 m-5" src="../assets/git.svg" alt="git" />
+              <img className="h-20 m-5" src="../assets/mongodb.svg" alt="mongodb" />
             </div>
           </div>
         </div>

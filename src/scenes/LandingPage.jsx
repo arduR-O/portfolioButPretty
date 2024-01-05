@@ -61,7 +61,7 @@ const LandingPage = ({ setCurrentPage }) => {
           </span>
         </p>
         {/* font-normal font-opensans mt-20 text-xl */}
-        <p className="mt-10 mb-7 text-xl text-center md:text-start md:px-0 px-12 font-opensans">
+        <p className="mt-10 mb-7 text-xl text-center md:text-start md:px-0 px-12 font-poppins font-medium">
           Web developer by day, I thrive on pushing boundaries as a creative
           problem solver. With a natural flair for teamwork and insatiable
           curiosity, I turn challenges into captivating digital

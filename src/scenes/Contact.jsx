@@ -144,6 +144,7 @@ const Contact = () => {
             </form>
           </motion.div>
         </div>
+      <p className="jsx-561ee4058b63bdb6 text-center text-sm sm:text-base font-poppins font-medium tracking-wide mt-8">Developed with <span role="img" aria-label="emoji" className="jsx-561ee4058b63bdb6 animate-pulse">❤️</span> by <span className="jsx-561ee4058b63bdb6 text-gray.dark.5">Omansh Sharma</span></p>
       </div>
     </section>
   );
