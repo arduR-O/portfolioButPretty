@@ -12,8 +12,8 @@ const Certifications = () => {
           <LineGradient width="w-64" />
         </div>
         <ImageCarousel
-          images={[ "../assets/mlspec.png", "../assets/fespec.png"]}
-          links={["https://www.coursera.org/account/accomplishments/specialization/D8K6NEMB9MH4","https://www.coursera.org/account/accomplishments/specialization/SZGQJ6HP7L29"]}
+          images={[ "../assets/fespec.png", "../assets/mlspec.png" , "../assets/dlspec.png"]}
+          links={["https://www.coursera.org/account/accomplishments/specialization/SZGQJ6HP7L29", "https://www.coursera.org/account/accomplishments/specialization/D8K6NEMB9MH4", "https://www.coursera.org/account/accomplishments/specialization/AUK4GDQZ39HS"]}
         />
       </div>
     </section>

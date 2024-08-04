@@ -13,8 +13,8 @@ const Projects = () => {
               <LineGradient width="w-24" />
             </div>
             <ImageCarousel
-              images={[ "../assets/cookoff.png"]}
-              links={["https://cookoff23.codechefvit.com/"]}
+              images={[ "../assets/cookoff.png", "../assets/dashboardGen.png", "../assets/gamio.jpg"]}
+              links={["https://cookoff23.codechefvit.com/","https://dashboard-genie-nfoz.vercel.app/","https://gamio.vercel.app/"]}
             />
           </div>
         </section>

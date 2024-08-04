@@ -30,7 +30,7 @@ const ImageCarousel = ({ images, links }) => {
             className="p-4 bg-blue-500 text-white"
             onClick={prevImage}
           >
-            <img className="h-20" src="../assets/left.svg" alt="prev" />
+            <img className="h-10" src="../assets/left.svg" alt="prev" />
           </button>
           <div className="w-[90vw] flex justify-center">
             <a
@@ -50,7 +50,7 @@ const ImageCarousel = ({ images, links }) => {
             className="p-4 bg-blue-500 text-white"
             onClick={nextImage}
           >
-            <img className="h-20" src="../assets/right.svg" alt="next" />
+            <img className="h-10" src="../assets/right.svg" alt="next" />
           </button>
         </div>
       ) : (
@@ -64,7 +64,7 @@ const ImageCarousel = ({ images, links }) => {
                 rel="noreferrer"
               >
                 <img
-                className="w-screen h-auto"
+                className="w-[90vw] h-[70vh]"
                 src={image}
                 alt={`Carousel ${index}`}
               />
